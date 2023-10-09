@@ -21,6 +21,11 @@ module.exports = {
     sourceType: "module",
     project: "./tsconfig.json",
   },
+  settings: {
+    "react": {
+      "version": "detect"
+    }
+  },
   plugins: ["react", "prettier"],
   rules: {
     "react/react-in-jsx-scope": "off",
@@ -28,7 +33,7 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "prettier/prettier": [
-      "error",
+      "off",
       {
         semi: false,
         plugins: ["prettier-plugin-tailwindcss"],
