@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-yellow-50 text-white;
+}
 .bg-gradient-custom {
   @apply bg-gradient-to-r from-yellow-400 to-red-400;
 }

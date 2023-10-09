@@ -22,9 +22,9 @@ module.exports = {
     project: "./tsconfig.json",
   },
   settings: {
-    "react": {
-      "version": "detect"
-    }
+    react: {
+      version: "detect",
+    },
   },
   plugins: ["react", "prettier"],
   rules: {
@@ -33,9 +33,11 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "prettier/prettier": [
-      "off",
+      "warn",
       {
         semi: false,
+        printWidth: 80,
+        bracketSameLine: true,
         plugins: ["prettier-plugin-tailwindcss"],
         "tailwindcss.config": "./tailwind.config.js",
       },
