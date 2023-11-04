@@ -95,7 +95,7 @@ function TodoList({ todo, setTodos }: Prop) {
                 <hr
                   className={`${
                     !filteredTodo.completed ? "hidden" : ""
-                  } animate-cross-out absolute top-[50%] h-0.5 w-full border-0 bg-black`}
+                  } absolute top-[50%] h-0.5 w-full animate-cross-out border-0 bg-black`}
                 />
               </li>
             ))
